@@ -1,0 +1,191 @@
+
+
+.menu{
+    width: 72px;
+    height: 100%;
+    border-radius: 15px;
+    background: #fff;
+    padding: 20px 0;
+    transition: $eio;
+    overflow: hidden;
+    position: relative;
+    position: sticky;
+    top: 0;
+    left: 0;
+    @include max992{
+        position: absolute;
+        z-index: 9;
+        left: -100%;
+        top: 0;
+        padding-top: 60px;
+        &.selected{ 
+            left: 0;
+            width: 340px;
+        }
+        
+        .menu-trigger{
+            display: none;
+            
+        }
+        // .list-menu{
+        //     padding-top:50px;
+        //     li{
+        //         a{
+        //              border-bottom: 1px solid #aaa!important;
+        //              span{
+        //                 visibility: visible!important;
+        //                 opacity: 1!important;
+        //                 left: 50px!important;
+        //                 transition-delay: .1s!important;
+        //              }
+        //         }
+        //     }
+        // }
+    }
+    &.selected{
+        width: 300px;
+        min-width: 300px;
+        box-shadow: 22px 0px 22px rgba(0, 0, 0, 0.13);
+        .list-menu{
+            li{
+                a{
+                     border-bottom: 1px solid #aaa;
+                     span{
+                        visibility: visible;
+                        opacity: 1;
+                        left: 50px;
+                        transition-delay: .1s;
+                     }
+                }
+            }
+        }
+    }
+
+
+    .fav-button{
+        width: 45px;
+        height: 45px;
+        border: 1px solid $primary-color;
+        border-radius: 15px;
+        background: transparent;
+        margin-right: 12px;
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        &.active{
+            background-color: $primary-color;
+            img{
+                filter: brightness(0) invert(1);
+
+            }
+        }
+        @include max992{
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+        img{
+            height: 18px;
+            width: 18px;
+            @include max992{
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+    .list-menu{
+        li{
+            
+           &:last-child{
+                a{
+                    border: none;
+                }
+           }
+            a{
+                display: flex;
+                position: relative;
+                align-items: center;
+                padding: 20px 0;
+                padding-left:10px;
+                margin-left: 16px;
+                margin-right: 16px;
+                border-bottom: 1px solid transparent;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+                span{
+                    position: absolute;
+                    visibility: hidden;
+                    opacity: 0;
+                    left: 100px;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #000;
+                    white-space: nowrap;
+                    transition: $eio;
+                }
+            }
+        }
+    }
+}
+
+// Hamburger Menu
+.menu-trigger {
+    position: relative;
+    z-index: 10;
+    width: 30px;
+    height: 22px;
+    display:table;
+    transition: all .4s;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    margin-left: 21px;
+    margin-bottom: 10vh;
+
+    span {
+        display: inline-block;
+        transition: all .4s ease-in-out;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $primary-color;
+        border-radius: 2px;
+
+        &:nth-of-type(1) {
+            top: 0;
+        }
+
+        &:nth-of-type(2) {
+            top: 9px;
+        }
+
+        &:nth-of-type(3) {
+            bottom: 0;
+        }
+    }
+
+    &.active {
+        span {
+            &:nth-of-type(1) {
+                -webkit-transform: translateY(12px) rotate(-315deg);
+                transform: translateY(12px) rotate(-315deg);
+            }
+
+            &:nth-of-type(2) {
+                opacity: 0;
+            }
+
+            &:nth-of-type(3) {
+                -webkit-transform: translateY(-7px) rotate(315deg);
+                transform: translateY(-7px) rotate(315deg);
+            }
+        }
+    }
+}
+// Hamburger Menu End

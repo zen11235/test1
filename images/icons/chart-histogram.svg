@@ -1,0 +1,8 @@
+<svg id="chart-histogram" xmlns="http://www.w3.org/2000/svg" width="17.625" height="17.608" viewBox="0 0 17.625 17.608">
+  <path id="Path_56302" data-name="Path 56302" d="M2.2,16.139a.734.734,0,0,1-.734-.734V0H0V15.4a2.2,2.2,0,0,0,2.2,2.2H17.625V16.139Z" fill="#8db837"/>
+  <rect id="Rectangle_6336" data-name="Rectangle 6336" width="1.469" height="5.141" transform="translate(3.672 8.813)" fill="#8db837"/>
+  <rect id="Rectangle_6337" data-name="Rectangle 6337" width="1.469" height="6.609" transform="translate(7.344 7.344)" fill="#8db837"/>
+  <rect id="Rectangle_6338" data-name="Rectangle 6338" width="1.469" height="4.406" transform="translate(11.016 9.547)" fill="#8db837"/>
+  <rect id="Rectangle_6339" data-name="Rectangle 6339" width="1.469" height="7.344" transform="translate(14.688 6.609)" fill="#8db837"/>
+  <path id="Path_56303" data-name="Path 56303" d="M9.484,3.319l3.672,3.672,5.66-5.66L17.778.293,13.156,4.914,9.484,1.243,5.293,5.434,6.331,6.472Z" transform="translate(-1.406 -0.078)" fill="#8db837"/>
+</svg>

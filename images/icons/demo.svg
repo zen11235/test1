@@ -1,0 +1,32 @@
+<svg id="movie-reel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_48507" data-name="Group 48507" transform="translate(7.679 2.654)">
+    <g id="Group_48506" data-name="Group 48506">
+      <path id="Path_55938" data-name="Path 55938" d="M166.914,56.617a3.1,3.1,0,1,0,3.1,3.1A3.106,3.106,0,0,0,166.914,56.617Zm0,4.8a1.7,1.7,0,1,1,1.7-1.7A1.7,1.7,0,0,1,166.914,61.416Z" transform="translate(-163.811 -56.617)" fill="#7b7b7b"/>
+    </g>
+  </g>
+  <g id="Group_48509" data-name="Group 48509" transform="translate(2.652 7.679)">
+    <g id="Group_48508" data-name="Group 48508">
+      <path id="Path_55939" data-name="Path 55939" d="M59.682,163.812a3.1,3.1,0,1,0,3.1,3.1A3.106,3.106,0,0,0,59.682,163.812Zm0,4.8a1.7,1.7,0,1,1,1.7-1.7A1.7,1.7,0,0,1,59.682,168.611Z" transform="translate(-56.579 -163.812)" fill="#7b7b7b"/>
+    </g>
+  </g>
+  <g id="Group_48511" data-name="Group 48511" transform="translate(7.679 12.703)">
+    <g id="Group_48510" data-name="Group 48510">
+      <path id="Path_55940" data-name="Path 55940" d="M166.914,271.006a3.1,3.1,0,1,0,3.1,3.1A3.106,3.106,0,0,0,166.914,271.006Zm0,4.8a1.7,1.7,0,1,1,1.7-1.7A1.7,1.7,0,0,1,166.914,275.8Z" transform="translate(-163.811 -271.006)" fill="#7b7b7b"/>
+    </g>
+  </g>
+  <g id="Group_48513" data-name="Group 48513" transform="translate(12.705 7.679)">
+    <g id="Group_48512" data-name="Group 48512">
+      <path id="Path_55941" data-name="Path 55941" d="M274.146,163.812a3.1,3.1,0,1,0,3.1,3.1A3.106,3.106,0,0,0,274.146,163.812Zm0,4.8a1.7,1.7,0,1,1,1.7-1.7A1.7,1.7,0,0,1,274.146,168.611Z" transform="translate(-271.043 -163.812)" fill="#7b7b7b"/>
+    </g>
+  </g>
+  <g id="Group_48515" data-name="Group 48515" transform="translate(9.72 9.72)">
+    <g id="Group_48514" data-name="Group 48514">
+      <path id="Path_55942" data-name="Path 55942" d="M208.429,207.368a1.061,1.061,0,1,0,1.061,1.061A1.062,1.062,0,0,0,208.429,207.368Z" transform="translate(-207.368 -207.368)" fill="#7b7b7b"/>
+    </g>
+  </g>
+  <g id="Group_48517" data-name="Group 48517">
+    <g id="Group_48516" data-name="Group 48516">
+      <path id="Path_55943" data-name="Path 55943" d="M20.859,20.156H16.114a10.788,10.788,0,1,0-5.333,1.406H20.859A1.736,1.736,0,0,1,22.594,23.3.7.7,0,0,0,24,23.3,3.144,3.144,0,0,0,20.859,20.156ZM1.406,10.781a9.375,9.375,0,1,1,9.375,9.375A9.386,9.386,0,0,1,1.406,10.781Z" fill="#7b7b7b"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+.info-boxes{
+    
+    margin: 0 -7px;
+    .col-lg-4{
+        padding: 0 7px;
+        @include max992{
+            margin-bottom: 14px;
+        }
+    }
+}
+.info-box{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    .head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h5{
+            font-size: 15px;
+            line-height: 15px;
+            color: #414141;
+            font-weight: 400;
+            margin: 0;
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            filter: invert(50%) sepia(0%) saturate(500%) hue-rotate(0deg);
+        }
+    }
+    .text-tt{
+        p{
+            margin: 0 0 6px 0;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        .num{
+            display: block;
+            font-size: 22px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+    }
+    .total-num{
+        font-size: 75px;
+        line-height: 75px;
+        font-weight: 700;
+        color: $primary-color;
+        @include max992{
+            font-size: 60px;
+            line-height: 60px;
+        }
+    }
+}

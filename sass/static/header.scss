@@ -1,0 +1,336 @@
+header{
+    padding: 14px 10px;
+    display: flex;
+    @include max992{
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .menu-trigger{
+        display: none;
+        @include max992{
+            display: inline-block;
+            margin-left: 0;
+            margin-right: 10px;
+            margin-bottom: 0;
+            transform: translateY(-4px);
+        }
+    }
+
+    .title{
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        @include max992{
+            margin-right: 0;
+        }
+
+        h4{
+            margin: 0 0 0 30px;
+        }
+    }
+    .logo{
+        display: inline-block;
+        margin-right: auto;
+        img{
+            height: 46px;
+            border-radius: 4px;
+            @include max992{
+                height: 36px;
+            }
+        }
+    }
+
+    .left-col{
+        width: 390px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @include max992{
+            width: auto;
+            margin-left: auto;
+            
+        }
+    }
+
+    .mid-col{
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include max992{
+            width: 100%;
+            order: 4;
+            margin: 0;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            
+        }
+        .select-box{
+            display: flex;
+            align-items: center ;
+            @include max992{
+                width: 100%;
+            }
+            img{
+                width: 32px;
+                height: 32px;
+                object-fit: contain;
+                margin-right: 8px;
+            }
+            select{
+                width: 220px;
+                height: 45px;
+                border: 1px solid #6C727F;
+                border-radius: 10px;
+                font-size: 14px;
+                padding: 0 16px;
+                background: url('../images/icons/right-arrow.svg') no-repeat right transparent;
+                -webkit-appearance: none;
+                background-position-x: calc(100% - 10px);
+                @include max992{
+                    width: 100%;
+                }
+            }
+        }
+        .balance{
+            margin-right: 35px;
+            font-size: 15px;
+            @include max992{
+                width: 100%;
+                text-align: center;
+                border-top:1px solid #ddd;
+                border-bottom:1px solid #ddd;
+                padding: 8px 0;
+                margin: 8px 0;
+                font-size: 12px;
+            }
+            img{
+                margin-left: 12px;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    .info-button{
+        height: 45px;
+        border: none;
+        border-radius: 15px;
+        background: transparent;
+        margin-right: 12px;
+        @include max992{
+            margin-right: 8px;
+        }
+        img{
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    .search{
+        width: 45px;
+        height: 45px;
+        border: 1px solid $primary-color;
+        border-radius: 15px;
+        background: transparent;
+        margin-right: 12px;
+        @include max992{
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+        img{
+            height: 18px;
+            width: 18px;
+            @include max992{
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+
+    .bell{
+        margin-right: 20px;
+        @include max992{
+            margin-right: 10px;
+        }
+        button{
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 15px;
+            position: relative;
+            background-color: $primary-color;
+            @include max992{
+                width: 36px;
+                height: 36px;
+                border-radius: 8px;
+                img{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            &.show{
+                background-color: #000;
+                span{
+                    background-color: #414141;
+                    color: #fff;
+                }
+            }
+            &::after{
+                display: none;
+            }
+            span{
+                position: absolute;
+                top:-12px;
+                background-color: #fff;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                font-size: 15px;
+                font-weight: 700;
+                @include max992{
+                    width: 20px;
+                    height: 20px;
+                    font-size: 12px;
+                    top: -6px;
+                }
+            }
+        }
+        .dropdown-menu{
+            border: none;
+            padding: 10px 0;
+            width: 432px;
+            border-radius: 10px;
+            background: #fff;
+            transform: translate3d(0px, 55px, 0px)!important;
+            filter: drop-shadow(0px 3px 22px rgba(0, 0, 0, 0.16));
+            @include max992{
+                right: -50px!important;
+                left: inherit!important;
+                width: 300px;
+            }
+            li{
+                padding: 0 16px;
+                &:last-child{
+                    a{
+                        border-bottom: none;
+                    }
+                }
+                &.unread{
+                    a{
+                        img{
+                            filter:  invert(60%) sepia(70%) saturate(500%) hue-rotate(5deg);
+                        }
+                    }
+                }
+                a{
+                    display: flex;
+                    border-bottom: 1px solid #aaaaaa;
+                    padding: 16px 8px;
+                    @include max992{
+                        white-space: inherit!important;
+                    }
+                    
+                    img{
+                        width: 20px;
+                        margin-right: 24px;
+                        
+                    }
+                }
+                span{
+                    font-size: 12px;
+                    line-height: 14px;
+                    font-weight: 300;
+                    color: #7B7B7B;
+                    display: block;
+                }
+                p{
+                  font-size: 12px;
+                  line-height: 16px;  
+                  color: #414141;
+                  margin: 0;
+                  strong{
+                    color: #000;
+                  }
+                }
+            }
+        }
+
+    }
+
+    .users{
+        button{
+            display: flex;
+            align-items: center;
+            text-align: right;
+            background: transparent;
+            border: none;
+            &::after{
+                display: none;
+            }
+            img{
+                width: 45px;
+                height: 45px;
+                border-radius: 15px;
+                margin-left: 14px;
+                @include max992{
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 8px;
+                    margin-left: 10px;
+                }
+            }
+            .tt{
+                position: relative;
+                padding-right: 28px;
+                @include max992{
+                    padding-right: 10px;
+                }
+                .name{
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 700;
+                    @include max992{
+                        display: none;
+                    }
+                }
+                span{
+                    display: block;
+                    font-size: 12px;
+                    line-height: 18px;
+                    @include max992{
+                        display: none;
+                    }
+                }
+                &::after{
+                    content: "";
+                    width: 12px;
+                    height: 8px;
+                    background: url('../images/icons/small-down.svg') no-repeat;
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        .dropdown-menu{
+            left: inherit!important;
+            right: 0!important;
+            transform: translate3d(0px, 55px, 0px)!important;
+
+            li{
+                a{
+                    font-size: 14px;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

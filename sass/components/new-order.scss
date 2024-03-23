@@ -1,0 +1,318 @@
+.new-order {
+    background-color: #fff;
+    border-radius: 15px;
+    height: calc(100vh - 136px);
+    padding: 20px;
+    @include max992{
+        height: inherit;
+    }
+
+    .row{
+       margin: 0 -10px;
+       .col-lg-3, .col-lg-4, .col-lg-9{
+        padding: 0 20px;
+        @include max992{
+            padding: 0;
+        }
+       }
+    }
+
+    .picture {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        height: calc(100vh - 176px);
+        @include max992{
+            display: none;
+        }
+
+        h4 {
+
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: #fff;
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 400;
+
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .title{
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 38px;
+        margin-top: 10px;
+        @include max992{
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        @include max992{
+            height: inherit;
+        }
+
+       
+
+        .file-container{
+            width: 100%;
+            label {
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: 700;
+                display: block;
+                margin-bottom: 8px;
+
+                span {
+                    color: $primary-color;
+                }
+            }
+
+            .input-file{
+                width: 100%;
+                input{
+                    display: none;
+                    
+                }
+                label{
+                    position: relative;
+                    background: rgba($color: $primary-color, $alpha: .1);
+                    height: 70px;
+                    border-radius: 10px;
+                    padding: 0 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $primary-color;
+                    cursor: pointer;
+                    @include max992{
+                        height: 60px;
+                        font-size: 16px;
+                    }
+                    img{
+                        position: absolute;
+                        width: 22px;
+                        height: 22px;
+                        left: 20px;
+                    }
+                }
+            }
+
+        }
+        .input-container {
+            width: 100%;
+            padding: 10px 0;
+
+            label {
+                font-size: 12px;
+                line-height: 14px;
+                display: block;
+                margin-bottom: 8px;
+
+                span {
+                    color: $primary-color;
+                }
+            }
+
+            input {
+                width: 100%;
+                height: 45px;
+                border-radius: 10px;
+                border: 1px solid #000;
+                padding: 0 10px;
+            }
+
+            textarea {
+                width: 100%;
+                height: 110px;
+                border-radius: 10px;
+                border: 1px solid #000;
+                padding: 10px;
+            }
+
+            .select-box {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                flex-direction: column;
+
+                @include max992 {
+                    width: 100%;
+                }
+                &.date{
+                    select{
+                        padding: 0 16px 0 60px;
+                    }
+                }
+
+                img {
+                    width: 21px;
+                    height: 21px;
+                    object-fit: contain;
+                    position: absolute;
+                    left: 12px;
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #7B7B7B;
+                    max-width: 270px;
+                    margin-top: 13px;
+                }
+
+                select {
+                    width: 100%;
+                    max-width: 276px;
+                    height: 45px;
+                    border: 1px solid #6C727F;
+                    border-radius: 10px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    padding: 0 16px;
+                    background: url('../images/icons/right-arrow.svg') no-repeat right transparent;
+                    -webkit-appearance: none;
+                    background-position-x: calc(100% - 10px);
+
+                    @include max992 {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .marka-button{
+            position: relative;
+            background: rgba($color: $primary-color, $alpha: .1);
+            height: 70px;
+            width: 100%;
+            border-radius: 10px;
+            padding: 0 40px;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: $primary-color;
+            cursor: pointer;
+            @include max992{
+                height: 60px;
+                font-size: 16px;
+            }
+            img{
+                position: absolute;
+                // width: 22px;
+                height: 27px;
+                left: 20px;
+            }
+        }
+
+        .marka-list-element{
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            li{
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 400;
+                margin: 0 14px 14px 0;
+                .del{
+                    margin-left: 8px;
+                    height: 14px;
+                    width: 14px;
+                    cursor: pointer;
+                    object-fit: contain;
+                    transition: $eio;
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+
+        .actions {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            @include max992{
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .button-close {
+                width: 140px;
+                height: 45px;
+                border-radius: 10px;
+                border: 1px solid #000;
+                color: #000;
+                font-weight: 400;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 20px;
+                transition: $eio;
+                @include max992{
+                    width: auto;
+                    padding: 0 16px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin: 0;
+                    min-width: 40%;
+                }
+
+                &:hover {
+                    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+                    transform: translate(0px, -4px) scale(1.01);
+                }
+
+            }
+            .button-next {
+                width: 290px;
+                height: 45px;
+                border-radius: 10px;
+                background-color: $primary-color;
+                color: #fff;
+                font-weight: 900;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 20px;
+                transition: $eio;
+                @include max992{
+                    width: auto;
+                    padding: 0 16px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    min-width: 40%;
+                }
+
+                &:hover {
+                    box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+                    transform: translate(0px, -4px) scale(1.01);
+                }
+            }
+        }
+    }
+}
